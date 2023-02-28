@@ -1,9 +1,5 @@
 @extends('layouts.main')
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    @section('title', 'home')
-</head>
+@section('title', 'home')
 <body>
     <main>
         @section('content')
