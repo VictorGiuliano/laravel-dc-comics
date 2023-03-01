@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar">
         <div class="navbar-logo container"><i class="fa-brands fa-discord"></i>
-            <img src="{{asset('images/dc-logo.png')}}">
+            <a href="{{url('/')}}"><img src="{{asset('images/dc-logo.png')}}"></a>
         </div>
         <div class="navbar-menu">
             <ul>
