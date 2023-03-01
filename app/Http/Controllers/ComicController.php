@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Comic;
 use Illuminate\Http\Request;
 
+
 class ComicController extends Controller
 {
     public function index()
@@ -16,5 +17,9 @@ class ComicController extends Controller
     {
         $comic = Comic::findOrFail($id);
         return view('comics.show', compact('comic'));
+    }
+    public function create()
+    {
+        return view(('comics.create'));
     }
 }

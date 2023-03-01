@@ -15,8 +15,8 @@
         </div>  
         @endforeach
     </div>
-    <button class="btn btn-more">
-        <h1>LOAD MORE</h1>
-    </button>
+    <a href="{{route('comics.create')}}"class="btn btn-more">
+        <h1>Add comic</h1>
+    </a>
 </div>
 @endsection
