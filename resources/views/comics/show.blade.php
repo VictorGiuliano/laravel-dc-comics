@@ -10,6 +10,7 @@
     <li>Tipo:{{$comic->type}}</li>
     <li>Artista:{{$comic->artists}}</li>
     <li>Scrittori:{{$comic->writers}}</li>
+    <li>Description:{{$comic->description}}</li>
 </ul>
-    <p>Description:{{$comic->description}}</p>
+    
 @endsection

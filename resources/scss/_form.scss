@@ -1,0 +1,32 @@
+.card-form {
+    height: 600px;
+    background-color: white;
+    padding: 60px 0;
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-basis: calc(100% /2);
+
+        .Union {
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            padding: 30px;
+            margin: 10px 0;
+            height: 60px;
+            width: 100%;
+
+            label {
+                margin: 0 10px;
+            }
+
+            textarea {
+                height: 100px;
+                width: 100%;
+            }
+        }
+    }
+
+}

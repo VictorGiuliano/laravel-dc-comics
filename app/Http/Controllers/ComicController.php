@@ -22,4 +22,12 @@ class ComicController extends Controller
     {
         return view(('comics.create'));
     }
+    public function store(Request $request)
+    {
+        $data = $request->all();
+        $comic = new Comic();
+        $comic->fill($data);
+        $comic->save();
+        return to_route('comics.show', $comic->id);
+    }
 }
