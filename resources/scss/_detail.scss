@@ -1,3 +1,19 @@
 li {
     color: white;
 }
+
+.btn-zone {
+    display: flex;
+    padding: 20px 0;
+
+
+    .btn-edit {
+        margin-right: 10px;
+    }
+
+    .btn-del {
+        width: 200%;
+        background: $blu;
+        height: 100%;
+    }
+}

@@ -3,8 +3,8 @@
 @section ('content')
 <div class= "container">
     <div class= "card-form">
-    <form action="{{route('comics.update',$comic->id)}}" method="post">
-        @method('Put')
+    <form action="{{route('comics.update',$comic->id)}}" method="POST">
+        @method('PUT')
         @csrf
         <div class="row">
             <div class= "Union">

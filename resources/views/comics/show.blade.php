@@ -12,5 +12,12 @@
     <li>Scrittori:{{$comic->writers}}</li> 
 </ul>
     <p>Description:{!!$comic->description!!}</p>
-    <a href="{{route('comics.edit', $comic->id)}}"class= "btn">Modifica</a>
+    <div class="btn-zone">
+        <a href="{{route('comics.edit', $comic->id)}}"class= "btn btn-edit">Modifica</a>
+        <form action="{{route('comics.destroy',$comic->id)}}" method="POST">
+            @csrf
+            @method('DELETE')
+            <button type="submit" class="btn-del">Elimina</button>
+        </form>
+    </div>
 @endsection
