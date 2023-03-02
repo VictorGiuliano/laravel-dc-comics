@@ -9,8 +9,8 @@
     <li>Data di uscita:{{$comic->sale_date}}</li>
     <li>Tipo:{{$comic->type}}</li>
     <li>Artista:{{$comic->artists}}</li>
-    <li>Scrittori:{{$comic->writers}}</li>
-    <li>Description:{{$comic->description}}</li>
+    <li>Scrittori:{{$comic->writers}}</li> 
 </ul>
-    
+    <p>Description:{!!$comic->description!!}</p>
+    <a href="{{route('comics.edit', $comic->id)}}"class= "btn">Modifica</a>
 @endsection

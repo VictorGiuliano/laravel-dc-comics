@@ -18,6 +18,17 @@ class ComicController extends Controller
         $comic = Comic::findOrFail($id);
         return view('comics.show', compact('comic'));
     }
+    public function edit(Comic $comic)
+    {
+        return view('comics.edit', compact('comic'));
+    }
+    public function update(Request $request, Comic $comic)
+    {
+        $data = $request->all();
+        $comic->fill($data);
+        $comic->save();
+        return to_route('comics.show', $comic->id);
+    }
     public function create()
     {
         return view(('comics.create'));

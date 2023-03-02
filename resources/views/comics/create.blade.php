@@ -11,7 +11,7 @@
             
             </div>
             <div class= "Union">
-                <label for="price">Prezzo:</label><input type="number"  id="price" name="price" placeholder="Price" min="0" max="99.99" required />
+                <label for="price">Prezzo:</label><input type="number"  id="price" name="price" placeholder="Price" min="0" step=0.01 max="99.99" required />
                <label for="series">Serie</label><input type="text" id="series" name="series"  placeholder="Text" required />
             </div>
             <div class= "Union">
